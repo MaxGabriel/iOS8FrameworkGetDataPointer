@@ -14,8 +14,8 @@
 		503559A71ABB97A70029EBAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503559A61ABB97A70029EBAB /* Images.xcassets */; };
 		503559AA1ABB97A70029EBAB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503559A81ABB97A70029EBAB /* LaunchScreen.xib */; };
 		503559B61ABB97A70029EBAB /* ListFrameworksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503559B51ABB97A70029EBAB /* ListFrameworksTests.m */; };
-		503559F01ABBAAD30029EBAB /* TestFramework2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503559EE1ABBAAC20029EBAB /* TestFramework2.framework */; };
-		503559F11ABBAAD30029EBAB /* TestFramework2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 503559EE1ABBAAC20029EBAB /* TestFramework2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		503559F31ABBAB890029EBAB /* TestFramework2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503559F21ABBAB890029EBAB /* TestFramework2.framework */; };
+		503559F51ABBAB9E0029EBAB /* TestFramework2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 503559F21ABBAB890029EBAB /* TestFramework2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				503559F11ABBAAD30029EBAB /* TestFramework2.framework in Embed Frameworks */,
+				503559F51ABBAB9E0029EBAB /* TestFramework2.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +56,7 @@
 		503559AF1ABB97A70029EBAB /* ListFrameworksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListFrameworksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		503559B41ABB97A70029EBAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503559B51ABB97A70029EBAB /* ListFrameworksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListFrameworksTests.m; sourceTree = "<group>"; };
-		503559EE1ABBAAC20029EBAB /* TestFramework2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestFramework2.framework; sourceTree = "<group>"; };
+		503559F21ABBAB890029EBAB /* TestFramework2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestFramework2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				503559F01ABBAAD30029EBAB /* TestFramework2.framework in Frameworks */,
+				503559F31ABBAB890029EBAB /* TestFramework2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +81,7 @@
 		5035598D1ABB97A70029EBAB = {
 			isa = PBXGroup;
 			children = (
-				503559EE1ABBAAC20029EBAB /* TestFramework2.framework */,
+				503559F21ABBAB890029EBAB /* TestFramework2.framework */,
 				503559981ABB97A70029EBAB /* ListFrameworks */,
 				503559B21ABB97A70029EBAB /* ListFrameworksTests */,
 				503559971ABB97A70029EBAB /* Products */,
