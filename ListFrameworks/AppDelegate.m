@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+@import TestFramework2;
 
 @interface AppDelegate ()
 
@@ -15,7 +16,15 @@
 @implementation AppDelegate
 
 
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    void * versionPointer = CFBundleGetDataPointerForName(CFBundleGetMainBundle(), CFSTR("TestFramework2VersionNumber"));
+    NSLog(@"Version pointer is %@",versionPointer ? @"PRESENT" : @"NULL");
+    
+    NSAssert(versionPointer != NULL, @"Version pointer should not be NULL");
+    
     // Override point for customization after application launch.
     return YES;
 }

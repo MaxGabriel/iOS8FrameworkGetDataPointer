@@ -14,6 +14,9 @@
 		503559A71ABB97A70029EBAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503559A61ABB97A70029EBAB /* Images.xcassets */; };
 		503559AA1ABB97A70029EBAB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503559A81ABB97A70029EBAB /* LaunchScreen.xib */; };
 		503559B61ABB97A70029EBAB /* ListFrameworksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503559B51ABB97A70029EBAB /* ListFrameworksTests.m */; };
+		503559C01ABB983D0029EBAB /* TestFramework2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503559BF1ABB983D0029EBAB /* TestFramework2.framework */; };
+		503559C11ABBA03F0029EBAB /* TestFramework2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503559BF1ABB983D0029EBAB /* TestFramework2.framework */; };
+		503559C21ABBA03F0029EBAB /* TestFramework2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 503559BF1ABB983D0029EBAB /* TestFramework2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +28,20 @@
 			remoteInfo = ListFrameworks;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		503559C31ABBA03F0029EBAB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				503559C21ABBA03F0029EBAB /* TestFramework2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		503559961ABB97A70029EBAB /* ListFrameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListFrameworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +57,7 @@
 		503559AF1ABB97A70029EBAB /* ListFrameworksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListFrameworksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		503559B41ABB97A70029EBAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503559B51ABB97A70029EBAB /* ListFrameworksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListFrameworksTests.m; sourceTree = "<group>"; };
+		503559BF1ABB983D0029EBAB /* TestFramework2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestFramework2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				503559C11ABBA03F0029EBAB /* TestFramework2.framework in Frameworks */,
+				503559C01ABB983D0029EBAB /* TestFramework2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +83,7 @@
 		5035598D1ABB97A70029EBAB = {
 			isa = PBXGroup;
 			children = (
+				503559BF1ABB983D0029EBAB /* TestFramework2.framework */,
 				503559981ABB97A70029EBAB /* ListFrameworks */,
 				503559B21ABB97A70029EBAB /* ListFrameworksTests */,
 				503559971ABB97A70029EBAB /* Products */,
@@ -129,6 +150,7 @@
 				503559921ABB97A70029EBAB /* Sources */,
 				503559931ABB97A70029EBAB /* Frameworks */,
 				503559941ABB97A70029EBAB /* Resources */,
+				503559C31ABBA03F0029EBAB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -343,6 +365,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ListFrameworks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +379,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ListFrameworks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +442,7 @@
 				503559BB1ABB97A70029EBAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		503559BC1ABB97A70029EBAB /* Build configuration list for PBXNativeTarget "ListFrameworksTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +451,7 @@
 				503559BE1ABB97A70029EBAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
